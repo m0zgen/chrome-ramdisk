@@ -1,0 +1,12 @@
+#!/bin/bash
+
+shopt -s dotglob
+cd /home/USR/.chrome
+
+if [[ "$1" == "save" ]]; then
+        rm ramdisk.tar
+        tar -cpf ramdisk.tar ramdisk/*
+elif [[ "$1" == "restore" ]]; then
+        rm -rf ramdisk/*
+        tar -xf ramdisk.tar
+fi

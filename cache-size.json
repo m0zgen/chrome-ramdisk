@@ -1,0 +1,5 @@
+{
+    "DiskCacheDir": "/home/USR/.chrome/ramdisk/",
+    "DiskCacheSize":    40000000,
+    "MediaCacheSize":   30000000
+}
